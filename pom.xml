@@ -11,6 +11,7 @@
     <modules>
         <module>springboot-dubbo-common</module>
         <module>springboot-dubbo-provider</module>
+        <module>Springboot-dubbo-consumer</module>
     </modules>
 
     <properties>
