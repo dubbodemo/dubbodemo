@@ -9,8 +9,10 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class TbItem implements Serializable {
     private Long id;
     private String title;
     private Double price;
+
 }
