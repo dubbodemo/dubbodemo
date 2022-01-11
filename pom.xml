@@ -11,6 +11,7 @@
     <modules>
 
         <module>springbbot-dubbo-api</module>
+        <module>pringboot-dubbo-provider</module>
     </modules>
 
     <properties>

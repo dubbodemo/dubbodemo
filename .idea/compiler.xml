@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="pringboot-dubbo-provider" />
         <module name="springbbot-dubbo-api" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Springboot-dubbo-consumer" options="-parameters" />
+      <module name="pringboot-dubbo-provider" options="-parameters" />
       <module name="springbbot-dubbo-api" options="-parameters" />
       <module name="springboot-dubbo-common" options="-parameters" />
       <module name="springboot-dubbo-provider" options="-parameters" />
