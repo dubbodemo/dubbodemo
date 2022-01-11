@@ -9,9 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>springboot-dubbo-common</module>
-        <module>springboot-dubbo-provider</module>
-        <module>Springboot-dubbo-consumer</module>
+
+        <module>springbbot-dubbo-api</module>
     </modules>
 
     <properties>
@@ -21,7 +20,7 @@
         <java.version>1.8</java.version>
         <curator-framework.version>5.2.0</curator-framework.version>
         <zookeeper.version>3.7.0</zookeeper.version>
-        <dubbo.starter.version>3.0.5</dubbo.starter.version>
+        <dubbo.version>3.0.5</dubbo.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -32,23 +31,33 @@
     <dependencyManagement>
         <dependencies>
             <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo.starter.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
+
+            <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
             <dependency>
                 <groupId>org.apache.curator</groupId>
-                <artifactId>curator-recipes</artifactId>
+                <artifactId>curator-framework</artifactId>
                 <version>${curator-framework.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
+            <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
 
             <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.22</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
             </dependency>
 
 
