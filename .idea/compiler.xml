@@ -7,22 +7,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pringboot-dubbo-provider" />
-        <module name="springbbot-dubbo-api" />
+        <module name="interface" />
+        <module name="provider" />
+        <module name="consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api" target="1.8" />
+      <module name="springboot-dubbo-api" target="8" />
       <module name="springboot-dubbo-common" target="8" />
       <module name="Springboot-dubbo-consumer" target="8" />
+      <module name="springboot-dubbo-consumer" target="8" />
       <module name="springboot-dubbo-provider" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Springboot-dubbo-consumer" options="-parameters" />
-      <module name="pringboot-dubbo-provider" options="-parameters" />
-      <module name="springbbot-dubbo-api" options="-parameters" />
+      <module name="api" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="interface" options="-parameters" />
+      <module name="provider" options="-parameters" />
+      <module name="springboot-dubbo-api" options="-parameters" />
       <module name="springboot-dubbo-common" options="-parameters" />
+      <module name="springboot-dubbo-consumer" options="-parameters" />
       <module name="springboot-dubbo-provider" options="-parameters" />
     </option>
   </component>

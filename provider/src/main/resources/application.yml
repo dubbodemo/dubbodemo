@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    name: dubbo-provider-luo
+  registry:
+    address: zookeeper://127.0.0.1:2283
+  protocol:
+    name: dubbo
+    port: 20881
+  scan:
+    base-packages: org.aaa.dubbo.service.UserServiceImpl
+server:
+  port: 8881

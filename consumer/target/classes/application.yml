@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2283
+    timeout: 10000
+  protocol:
+    name: dubbo
+    port: 20881
+
+#指定tomcat端口，要不然会端口冲突
+server:
+  port: 8089
