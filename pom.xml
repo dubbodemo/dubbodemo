@@ -26,10 +26,8 @@
         <target.level>1.8</target.level>
         <java.version>1.8</java.version>
         <dubbo-spring.version>3.0.5</dubbo-spring.version>
-        <junit.version>4.12</junit.version>
         <spring-boot-starter.version>2.6.2</spring-boot-starter.version>
         <spring-boot-test.version>2.6.2</spring-boot-test.version>
-        <curator-framework.version>5.2.0</curator-framework.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <zkclient.version>4.2.0</zkclient.version>
     </properties>
@@ -61,6 +59,7 @@
                 <artifactId>lombok</artifactId>
                 <version>1.18.22</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>
